@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="./vendors/slick.css">
+    <link rel="stylesheet" href="./vendors/slick-theme.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="icon" href="./assets/logos/logo.png">
 </head>
 
 <body>
@@ -26,7 +29,7 @@
                         <a href="#lang&os" class="header__nav-item--link">Language & OS</a>
                     </li>
                     <li class="header__nav-list--item">
-                        <a href="#projects" class="header__nav-item--link">Projects</a>
+                        <a href="#my-projects" class="header__nav-item--link">Projects</a>
                     </li>
                     <li class="header__nav-list--item">
                         <a href="#experience" class="header__nav-item--link">Experience</a>
@@ -179,27 +182,105 @@
             </div>
         </div>
 
-        <div class="projects">
+        <div id="my-projects" class="projects">
             <div class="projects__container container">
+                <h2 class="projects__title">My Projects</h2>
+                <p class="projects__subtitle">There are my several websites but on my github you will find more advanced and complex websites builded by React JS.</p>
 
+                <ul class="projects__wrapper">
+
+                    <li class="project">
+                        <iframe id="project__embed" title="project embed" width="400" height="600"
+                            src="https://cheff-dinner.netlify.app/" scrolling="no" frameborder="0">
+                        </iframe>
+                        <a class="project__link" href="https://cheff-dinner.netlify.app/" target="_blank">Show More</a>
+                    </li>
+
+                    <li class="project">
+                        <iframe id="project__embed" title="project embed" width="400" height="600"
+                            src="https://hbt-hotele-website.netlify.app/" scrolling="no" frameborder="0">
+                        </iframe>
+                        <a class="project__link" href="https://hbt-hotele-website.netlify.app/" target="_blank">Show
+                            More</a>
+                    </li>
+
+                    <li class="project">
+                        <iframe id="project__embed" title="project embed" width="400" height="600"
+                            src="https://scoots-rent.netlify.app/" scrolling="no" frameborder="0">
+                        </iframe>
+                        <a class="project__link" href="https://scoots-rent.netlify.app/" target="_blank">Show
+                            More</a>
+                    </li>
+
+                    <li class="project">
+                        <iframe id="project__embed" title="project embed" width="400" height="600"
+                            src="https://my-cv-website.netlify.app/#about" scrolling="no" frameborder="0">
+                        </iframe>
+                        <a class="project__link" href="https://my-cv-website.netlify.app/#about" target="_blank">Show
+                            More</a>
+                    </li>
+
+                    <li class="project">
+                        <img src="./assets/img/smartphones-dashboard.png" alt="smartphones dashboard" width="400"
+                            height="600">
+                        <a class="project__link" href="https://zurumbia.netlify.app/" target="_blank">Show More</a>
+                    </li>
+
+                    <li class="project">
+                        <img src="./assets/img/don-don-ziki-game.png" alt="smartphones dashboard" width="400"
+                            height="600">
+                        <a class="project__link" href="https://don-don-ziki-gameplay.netlify.app/" target="_blank">Show
+                            More</a>
+                    </li>
+
+                    <li class="project">
+                        <iframe id="project__embed" title="project embed" width="400" height="600"
+                            src="https://product-delivery.netlify.app/" scrolling="no" frameborder="0">
+                        </iframe>
+                        <a class="project__link" href="https://product-delivery.netlify.app/" target="_blank">Show
+                            More</a>
+                    </li>
+
+                    <li class="project">
+                        <img src="./assets/img/students-list.png" alt="students list" width="400" height="600">
+                        <a class="project__link" href="https://sweet-churros-0ce88f.netlify.app/" target="_blank">Show
+                            More</a>
+                    </li>
+
+                    <li class="project">
+                        <img src="./assets/img/unsplash-clone.png" alt="unsplash clone" width="400" height="600">
+                        <a class="project__link" href="https://unsplash-template.netlify.app/" target="_blank">Show
+                            More</a>
+                    </li>
+
+                    <li class="project">
+                        <iframe id="project__embed" title="project embed" width="400" height="600"
+                            src="https://fashions-e-commerce.netlify.app/" scrolling="no" frameborder="0">
+                        </iframe>
+                        <a class="project__link" href="https://fashions-e-commerce.netlify.app/" target="_blank">Show
+                            More</a>
+                    </li>
+                </ul>
             </div>
         </div>
 
         <div class="experience">
             <div class="experience__container container">
-
+                
             </div>
         </div>
 
-        <div class="exucation">
+        <div class="education">
             <div class="education__container container">
-                
+
             </div>
         </div>
     </main>
     <footer class="footer"></footer>
 
+    <script src="./vendors/jquery.js"></script>
     <script src="./vendors/typed.js"></script>
+    <script src="./vendors/slick.js"></script>
     <script src="./js/script.js"></script>
 
 </body>

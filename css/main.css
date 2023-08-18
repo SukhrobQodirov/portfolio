@@ -61,7 +61,7 @@ a {
 }
 
 .container {
-  width: 1480px;
+  max-width: 1480px;
   margin: 0 auto;
 }
 
@@ -386,4 +386,36 @@ a {
   background-repeat: no-repeat;
   background-size: 200px;
   background-position: center;
+}
+
+.projects {
+  width: 100%;
+  height: 100vh;
+  padding: 150px 0;
+  padding-top: 101px;
+  text-align: center;
+}
+.projects__title {
+  margin-bottom: 20px;
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.projects__subtitle {
+  max-width: 70%;
+  margin: 0 auto;
+  margin-bottom: 14px;
+}
+
+.project {
+  text-align: center;
+}
+.project__link {
+  margin-top: 30px;
+  font-size: 28px;
+  cursor: pointer;
+  transition: 0.3s linear all;
+}
+.project__link:hover {
+  color: coral;
 }/*# sourceMappingURL=main.css.map */
