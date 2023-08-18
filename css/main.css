@@ -1,0 +1,389 @@
+/* roboto-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../assets/fonts/roboto-v30-latin-regular.woff2") format("woff2"), url("../../assets/fonts/roboto-v30-latin-regular.woff") format("woff");
+}
+/* roboto-500 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../../assets/fonts/roboto-v30-latin-500.woff2") format("woff2"), url("../../assets/fonts/roboto-v30-latin-500.woff") format("woff");
+}
+/* roboto-700 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../../assets/fonts/roboto-v30-latin-700.woff2") format("woff2"), url("../../assets/fonts/roboto-v30-latin-700.woff") format("woff");
+}
+/* roboto-900 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../../assets/fonts/roboto-v30-latin-900.woff2") format("woff2"), url("../../assets/fonts/roboto-v30-latin-900.woff") format("woff");
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 24px;
+  font-family: "Roboto";
+  font-weight: 700;
+  color: #ffffff;
+  background: #0F1624;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+a {
+  color: inherit;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.container {
+  width: 1480px;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  background: rgba(15, 22, 36, 0.95);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+}
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+}
+.header__nav-list {
+  display: flex;
+  align-items: center;
+}
+.header__nav-list--item:hover {
+  color: #EEA47F;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.header__nav-item--link {
+  padding: 24px 40px;
+  font-size: 18px;
+  transition: 0.3s linear all;
+}
+.header__nav-contacts {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+}
+
+.intro {
+  width: 100%;
+  height: 100vh;
+  padding: 125px 0;
+  padding-top: 201px;
+}
+.intro-overlay {
+  width: 100%;
+  height: 100vh;
+  background: url("../../../assets/img/intro-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -9;
+}
+.intro-overlay::before {
+  content: "";
+  width: 100%;
+  height: 100vh;
+  display: inline-block;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.7);
+}
+.intro__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.intro__hero {
+  width: 600px;
+  height: 600px;
+  background: url("../../../assets/img/photo_2023-08-18_22-33-53.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: 3px solid #FFFFFF;
+  border-radius: 50%;
+  transition: 0.5s linear all;
+}
+.intro__hero:hover {
+  border-color: #EEA47F;
+}
+.intro__content {
+  flex-basis: 50%;
+}
+.intro__content-text {
+  font-size: 32px;
+}
+.intro__content-info {
+  max-width: 90%;
+  font-size: 32px;
+}
+.intro__content-link {
+  margin-top: 24px;
+  padding: 20px 63px;
+  font-size: 28px;
+  border-radius: 100px;
+  background: linear-gradient(180deg, #13ADC7 0%, #6978D1 50%, #945DD6 100%);
+  cursor: pointer;
+}
+
+.typed-js {
+  width: 100%;
+  height: 74px;
+  display: flex;
+  align-items: center;
+}
+.typed-js .element {
+  font-size: 64px;
+  text-transform: uppercase;
+  color: #EEA47F;
+}
+.typed-js .typed-cursor {
+  display: none;
+}
+
+.about {
+  width: 100%;
+  height: 100vh;
+  padding: 165px 0;
+  padding-top: 241px;
+  text-align: center;
+  transition: 0.5s linear all;
+  position: relative;
+  z-index: 2;
+}
+.about::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.85);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.about::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  background: url("../../../assets/img/about-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+.about__image {
+  border-radius: 50%;
+}
+.about__content {
+  max-width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 24px;
+}
+.about__content-title {
+  width: 80%;
+  padding-bottom: 20px;
+  font-size: 54px;
+  font-weight: 900;
+  border-bottom: 5px solid #EEA47F;
+}
+.about__content-text {
+  font-size: 28px;
+  font-weight: 500;
+}
+.about__content-text--link {
+  font-weight: 700;
+  font-size: 32px;
+  color: #EEA47F;
+}
+
+.my-skills {
+  width: 100%;
+  height: 100vh;
+  padding-top: 125px;
+  text-align: center;
+}
+.my-skills__title {
+  padding-bottom: 20px;
+  font-size: 48px;
+  border-bottom: 5px solid #EEA47F;
+}
+.my-skills__list {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  align-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+}
+.my-skills__list-item--title {
+  font-size: 28px;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+
+.language {
+  width: 100%;
+  height: 100vh;
+  padding-top: 176px;
+  text-align: center;
+  position: relative;
+}
+.language::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.85);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.language::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  background: url("../../../assets/img/os-and-langs-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+.language__list {
+  width: 100%;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+}
+.language__list-item {
+  width: 350px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.language__list-item--image {
+  width: 180px;
+  height: 180px;
+  display: inline-block;
+  background: url("../../../assets/icons/uzbekistan-lang-icon.png");
+  background-repeat: no-repeat;
+  background-size: 200px;
+  background-position: center;
+}
+.language__list-item:first-child .language__list-item--image {
+  background: url("../../../assets/icons/english-lang-icon.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.language__list-item:last-child .language__list-item--image {
+  background: url("../../../assets/icons/russian-lang-icon.png");
+  background-repeat: no-repeat;
+  background-size: 200px;
+  background-position: center;
+}
+
+.os__list {
+  width: 100%;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+}
+.os__list-item {
+  width: 350px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.os__list-item--image {
+  width: 180px;
+  height: 180px;
+  display: inline-block;
+  background: url("../../../assets/logos/kali-linux-logo.svg");
+  background-repeat: no-repeat;
+  background-size: 200px;
+  background-position: center;
+}
+.os__list-item:first-child .os__list-item--image {
+  background: url("../../../assets/logos/ubuntu-linux-logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.os__list-item:last-child .os__list-item--image {
+  background: url("../../../assets/logos/windows-logo.svg");
+  background-repeat: no-repeat;
+  background-size: 200px;
+  background-position: center;
+}/*# sourceMappingURL=main.css.map */

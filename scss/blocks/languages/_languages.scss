@@ -1,0 +1,128 @@
+.language {
+    width: 100%;
+    height: 100vh;
+    padding-top: 176px;
+    text-align: center;
+    position: relative;
+
+    &::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        background: rgba(0, 0, 0, .85);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    &::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        background: url('../../../assets/img/os-and-langs-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -2;
+    }
+
+    &__list {
+        width: 100%;
+        margin-top: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        column-gap: 60px;
+
+        &-item {
+            width: 350px;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+            &--image {
+                width: 180px;
+                height: 180px;
+                display: inline-block;
+                background: url('../../../assets/icons/uzbekistan-lang-icon.png');
+                background-repeat: no-repeat;
+                background-size: 200px;
+                background-position: center;
+            }
+
+            &:first-child {
+                & .language__list-item--image {
+                    background: url('../../../assets/icons/english-lang-icon.png');
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: center;
+                }
+            }
+
+            &:last-child {
+                & .language__list-item--image {
+                    background: url('../../../assets/icons/russian-lang-icon.png');
+                    background-repeat: no-repeat;
+                    background-size: 200px;
+                    background-position: center;
+                }
+            }
+        }
+    }
+}
+
+.os__list {
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    column-gap: 60px;
+
+    &-item {
+        width: 350px;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        &--image {
+            width: 180px;
+            height: 180px;
+            display: inline-block;
+            background: url('../../../assets/logos/kali-linux-logo.svg');
+            background-repeat: no-repeat;
+            background-size: 200px;
+            background-position: center;
+        }
+
+        &:first-child {
+            & .os__list-item--image {
+                background: url('../../../assets/logos/ubuntu-linux-logo.png');
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+            }
+        }
+
+        &:last-child {
+            & .os__list-item--image {
+                background: url('../../../assets/logos/windows-logo.svg');
+                background-repeat: no-repeat;
+                background-size: 200px;
+                background-position: center;
+            }
+        }
+    }
+}

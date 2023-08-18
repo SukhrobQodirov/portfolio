@@ -1,0 +1,45 @@
+.header {
+    width: 100%;
+    background: rgba(15, 22, 36, .95);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        column-gap: 15px;
+
+        &-list {
+            display: flex;
+            align-items: center;
+
+            &--item {
+                &:hover {
+                    color: #EEA47F;
+                    background-color: rgba(255, 255, 255, .3);
+                }
+            }
+        }
+
+        &-item--link {
+            padding: 24px 40px;
+            font-size: 18px;
+            transition: .3s linear all;
+        }
+
+        &-contacts {
+            display: flex;
+            align-items: center;
+            column-gap: 24px;
+        }
+    }
+}
