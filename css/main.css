@@ -220,6 +220,7 @@ a {
   z-index: -2;
 }
 .about__image {
+  border: 5px solid #EEA47F;
   border-radius: 50%;
 }
 .about__content {
@@ -405,6 +406,10 @@ a {
   max-width: 70%;
   margin: 0 auto;
   margin-bottom: 14px;
+}
+.projects__list {
+  width: 100%;
+  margin-top: 30px;
 }
 
 .project {

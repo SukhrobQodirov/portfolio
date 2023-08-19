@@ -4,7 +4,6 @@ $(document).ready(function () {
         strings: [
             'Sukhrob Qodirov',
             'front end Developer',
-            '18 years old'
         ],
         typeSpeed: 50,
         startDelay: 500,
@@ -15,36 +14,19 @@ $(document).ready(function () {
 
     let typed = new Typed('.element', options);
 
-    $('.projects__wrapper').slick({
+    $('.projects__list').slick({
         centerMode: true,
-        centerPadding: '60px',
-        slidesToShow: 3,
-        slidesToScroll: 1,
+        centerPadding: '0',
+        dots: true,
         infinite: true,
         autoplay: true,
-        autoplaySpeed: 2000,
+        loop: true,
+        slidesToShow: 1,
+        adaptiveHeight: true,
+        slidesToScroll: 1,
+        autoplaySpeed: 1500,
         cssEase: 'linear',
         arrows: false,
-        responsive: [
-            {
-                breakpoint: 768,
-                settings: {
-                    arrows: false,
-                    centerMode: true,
-                    centerPadding: '40px',
-                    slidesToShow: 3
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    arrows: false,
-                    centerMode: true,
-                    centerPadding: '40px',
-                    slidesToShow: 1
-                }
-            }
-        ]
     });
 
 
