@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="icon" href="./assets/logos/logo.png">
     <link rel="stylesheet" href="./vendors/slick.css">
     <link rel="stylesheet" href="./vendors/slick-theme.css">
+    <link rel="stylesheet" href="./vendors/aos.css">
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="icon" href="./assets/logos/logo.png">
 </head>
 
 <body>
@@ -32,10 +33,10 @@
                         <a href="#my-projects" class="header__nav-item--link">Projects</a>
                     </li>
                     <li class="header__nav-list--item">
-                        <a href="#experience" class="header__nav-item--link">Experience</a>
+                        <a href="#my-experience" class="header__nav-item--link">Experience</a>
                     </li>
                     <li class="header__nav-list--item">
-                        <a href="#exucation" class="header__nav-item--link">Education</a>
+                        <a href="#my-education" class="header__nav-item--link">Education</a>
                     </li>
                 </ul>
                 <div class="header__nav-contacts">
@@ -51,9 +52,10 @@
                         <img src="./assets/icons/github.svg" alt="github icon" class="header__nav-contact--icon"
                             width="32" height="32">
                     </a>
-                    <a href="./assets/files/Sukhrob_Qodirov_ CV.pdf" class="header__nav-download" download="Sukhrob_Qodirov_CV.pdf">
-                        <img src="./assets/icons/download-icon.png" alt="download icon" class="header__nav-contact--icon"
-                            width="32" height="32">
+                    <a href="./assets/files/Sukhrob_Qodirov_ CV.pdf" class="header__nav-download"
+                        download="Sukhrob_Qodirov_CV.pdf">
+                        <img src="./assets/icons/download-icon.png" alt="download icon"
+                            class="header__nav-contact--icon" width="32" height="32">
                     </a>
                 </div>
             </nav>
@@ -274,23 +276,89 @@
             </div>
         </div>
 
-        <div class="experience">
+        <div id="my-experience" class="experience">
             <div class="experience__container container">
-
+                <h2 class="experience__title">Experience</h2>
+                <div class="experience__cards">
+                    <div class="experience__card" data-aos="fade-right" data-aos-anchor-placement="right-bottom"
+                        data-aos-delay="150" data-aos-duration="1500" data-aos-easing="ease-in-out"
+                        data-aos-mirror="true" data-aos-once="false">
+                        <div class="experience__card-wrapper">
+                            <h3 class="experience__card-title">Buxoro IT School</h3>
+                            <span class="experience__card-date">06/2023 - Currently, Tashkent region</span>
+                        </div>
+                        <span class="experience__card-subtitle">Front-end Teacher</span>
+                        <p class="experience__card-description">I am teaching students with Front-end basics (HTML5,
+                            CSS3, BootStrap3, JavaScript6) for building simple websites and giving opportunity to make
+                            SPA (Single Page Applications) with one of the most JavaScript library named REACT JS.</p>
+                    </div>
+                    <div class="experience__card" data-aos="fade-left" data-aos-anchor-placement="left-bottom"
+                        data-aos-delay="150" data-aos-duration="1500" data-aos-easing="ease-in-out"
+                        data-aos-mirror="true" data-aos-once="false">
+                        <div class="experience__card-wrapper">
+                            <h3 class="experience__card-title">NAPA Automotive</h3>
+                            <span class="experience__card-date">06/2022 - 10/2022, Tashkent</span>
+                        </div>
+                        <span class="experience__card-subtitle">Front-end Developer</span>
+                        <p class="experience__card-description">I was member of web-developers group on this position.
+                            My main job were building responsive UX/UI components using REACT JS (With Its Most Popular
+                            Libraries Such As: i18, Redux, Redux/toolkit and others with npm). At this position I have
+                            participated <i>Tashkent State Polytechical University website and one startup project named
+                                "My Career". That had needed to be alternative of UpWork for Uzbekistan</i></p>
+                    </div>
+                    <div class="experience__card" data-aos="fade-right" data-aos-anchor-placement="right-bottom"
+                        data-aos-delay="150" data-aos-duration="1500" data-aos-easing="ease-in-out"
+                        data-aos-mirror="true" data-aos-once="false">
+                        <div class="experience__card-wrapper">
+                            <h3 class="experience__card-title">MX Media Group</h3>
+                            <span class="experience__card-date">06/2021 - 10/2021, Tashkent</span>
+                        </div>
+                        <span class="experience__card-subtitle">Front-end Support Developer</span>
+                        <p class="experience__card-description">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.
+                            Expedita fugit delectus provident eveniet quisquam repudiandae, commodi sunt laborum,
+                            soluta
+                            ut velit aspernatur optio qui at officia a repellat laudantium suscipit!</p>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="education">
+        <div id="my-education" class="education">
             <div class="education__container container">
-
+                <h2 class="education__title">Education</h2>
+                <ul class="education__cards">
+                    <li class="education__card" data-aos="zoom-in-up" data-aos-anchor-placement="right-bottom"
+                        data-aos-delay="150" data-aos-duration="1500" data-aos-easing="ease-in-out"
+                        data-aos-mirror="true" data-aos-once="false">
+                        <div class="education__card-wrapper">
+                            <h3 class="education__card-title">International Agriculture University</h3>
+                            <span class="education__card-date">09/2022 - Currently, Tashkent region</span>
+                        </div>
+                        <span class="education__card-subtitle">Smart Sustainable Agriculture</span>
+                        <p class="education__card-description">Agriculture and Farming, Sustainable Development, Agri-Food Business and Marketing, Digital Skills, Agro-Bioscience, English for Academic Purposes</p>
+                    </li>
+                    <li class="education__card" data-aos="zoom-in-up" data-aos-anchor-placement="right-bottom"
+                        data-aos-delay="150" data-aos-duration="1500" data-aos-easing="ease-in-out"
+                        data-aos-mirror="true" data-aos-once="false">
+                        <div class="education__card-wrapper">
+                            <h3 class="education__card-title">Najot Ta'lim</h3>
+                            <span class="education__card-date">11/2021 - 05/2022, Tashkent</span>
+                        </div>
+                        <span class="education__card-subtitle">Standart Front-end Course</span>
+                        <p class="education__card-description">HTML, CSS, BOOTSTRAP, JAVASCRIPT, REACT, GULP.</p>
+                    </li>
+                </ul>
             </div>
         </div>
     </main>
-    <footer class="footer"></footer>
-
+    <footer class="footer">
+        <span>Created in 2023</span>
+    </footer>
     <script src="./vendors/jquery.js"></script>
     <script src="./vendors/typed.js"></script>
     <script src="./vendors/slick.js"></script>
+    <script src="./vendors/aos.js"></script>
     <script src="./js/script.js"></script>
 
 </body>

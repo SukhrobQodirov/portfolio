@@ -17,7 +17,6 @@ $(document).ready(function () {
     $('.projects__list').slick({
         centerMode: true,
         centerPadding: '0',
-        dots: true,
         infinite: true,
         autoplay: true,
         loop: true,
@@ -29,5 +28,5 @@ $(document).ready(function () {
         arrows: false,
     });
 
-
+    AOS.init();
 })
