@@ -208,7 +208,8 @@ a {
 
 @media only screen and (max-width: 769px) {
   .intro {
-    padding: 125px 0;
+    padding: 0;
+    padding-top: 54px;
     display: flex;
     align-items: center;
   }
@@ -229,7 +230,7 @@ a {
     font-size: 24px;
   }
   .intro__content-info {
-    max-width: 90%;
+    margin: 0 auto;
     font-size: 24px;
   }
   .intro__content-link {
@@ -241,6 +242,7 @@ a {
     margin: 0 auto;
     display: flex;
     align-items: center;
+    justify-content: center;
   }
   .typed-js .element {
     font-size: 34px;
@@ -311,6 +313,23 @@ a {
   color: #EEA47F;
 }
 
+@media only screen and (max-width: 769px) {
+  .about {
+    height: 100%;
+    padding: 34px 0;
+  }
+  .about__content {
+    max-width: 90%;
+  }
+  .about__content-text {
+    font-size: 18px;
+  }
+  .about__content-text--link {
+    font-weight: 700;
+    font-size: 18px;
+    color: #EEA47F;
+  }
+}
 .my-skills {
   width: 100%;
   height: 100vh;

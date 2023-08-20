@@ -90,7 +90,8 @@
 
 @media only screen and (max-width: 769px) {
     .intro {
-        padding: 125px 0;
+        padding: 0;
+        padding-top: 54px;
         display: flex;
         align-items: center;
 
@@ -114,7 +115,7 @@
             }
 
             &-info {
-                max-width: 90%;
+                margin: 0 auto;
                 font-size: 24px;
             }
 
@@ -130,6 +131,7 @@
         margin: 0 auto;
         display: flex;
         align-items: center;
+        justify-content: center;
     
         & .element {
             font-size: 34px;
