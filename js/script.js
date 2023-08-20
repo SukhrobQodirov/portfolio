@@ -23,9 +23,9 @@ $(document).ready(function () {
         slidesToShow: 1,
         adaptiveHeight: true,
         slidesToScroll: 1,
-        autoplaySpeed: 1500,
+        autoplaySpeed: 5000,
         cssEase: 'linear',
-        arrows: false,
+        arrows: true,
     });
 
     AOS.init();

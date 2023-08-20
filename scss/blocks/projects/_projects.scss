@@ -38,3 +38,19 @@
         }
     }
 }
+
+@media only screen and (max-width: 769px) {
+    .projects {
+        height: max-content;
+        padding: 50px 20px;
+
+        &__title {
+            font-size: 28px;
+        }
+
+        &__subtitle {
+            max-width: 100%;
+            font-size: 18px;
+        }
+    }
+}

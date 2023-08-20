@@ -6,3 +6,9 @@
     font-style: italic;
     background: rgba(15, 22, 36, 0.95);
 }
+
+@media only screen and (max-width: 769px) {
+    .footer {
+        font-size: 14px;
+    }
+}
