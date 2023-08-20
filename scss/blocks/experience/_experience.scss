@@ -76,10 +76,10 @@
 @media only screen and (max-width: 769px) {
     .experience {
         height: max-content;
-        padding: 50px;
+        padding: 50px 0;
 
         &__card {
-            width: 80%;
+            width: 100%;
             padding: 12px 24px;
 
             &-title {

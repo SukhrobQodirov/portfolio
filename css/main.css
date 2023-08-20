@@ -122,9 +122,13 @@ a {
   .header__nav-list {
     display: none;
   }
+  .header__nav-contacts {
+    -moz-column-gap: 8px;
+         column-gap: 8px;
+  }
   .header__nav-contact--icon {
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
   }
 }
 .intro {
@@ -621,10 +625,10 @@ a {
   .experience {
     height: -moz-max-content;
     height: max-content;
-    padding: 50px;
+    padding: 50px 0;
   }
   .experience__card {
-    width: 80%;
+    width: 100%;
     padding: 12px 24px;
   }
   .experience__card-title {
@@ -704,7 +708,7 @@ a {
     font-size: 28px;
   }
   .education__card {
-    width: 90%;
+    width: 100%;
     padding: 12px 24px;
   }
   .education__card-title {
