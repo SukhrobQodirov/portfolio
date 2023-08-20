@@ -28,3 +28,10 @@ a {
     max-width: 1480px;
     margin: 0 auto;
 }
+
+@media only screen and (max-width: 1480px) {
+    .container {
+        max-width: 1440px;
+        padding: 0 20px;
+    }
+}
