@@ -43,3 +43,18 @@
         }
     }
 }
+
+@media only screen and (max-width: 1480px) {
+    body {
+        padding-top: 101px;
+    }
+
+    .header {
+        padding: 24px;
+        &__nav {
+            &-list {
+                display: none;
+            }
+        }
+    }
+}
